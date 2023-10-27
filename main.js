@@ -1,3 +1,17 @@
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+});
+
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}));
+
+
 var bgImages = ['https://i.ibb.co/9TC1pc2/carin-layout.png',
 'https://i.ibb.co/3mH3GV9/display-of-sunglasses-on-a-table.png',
 'https://i.ibb.co/vCNvYxz/dr-glass-posters.png',
