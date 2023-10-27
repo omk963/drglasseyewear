@@ -12,7 +12,7 @@ function bgSlideshow() {
   } else {
     counter = 0;
   }
- setTimeout(bgSlideshow, 8000)
+ setTimeout(bgSlideshow, 8000);
 }
 
 window.onload = bgSlideshow();

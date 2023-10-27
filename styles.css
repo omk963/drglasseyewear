@@ -48,7 +48,7 @@
   }
   
   .one {
-  background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 35%, rgba(143,143,143,1) 100%);
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 35%, rgba(143,143,143,1) 100%);
     padding: 20px 0;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
