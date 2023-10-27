@@ -1,4 +1,9 @@
-var bgImages = ["media/carin layout.png","media/display of sunglasses on a table.png","media/dr glass posters.png", "media/left part of store display.png", "media/sunglasses display.png", "media/three glasses in front of bear figure that has yellow heart shaped sunglasses on it.png", "media/three sunglasses with plants behind.png"]
+var bgImages = ['https://i.ibb.co/9TC1pc2/carin-layout.png',
+'https://i.ibb.co/3mH3GV9/display-of-sunglasses-on-a-table.png',
+'https://i.ibb.co/vCNvYxz/dr-glass-posters.png',
+'https://i.ibb.co/Yc0WWff/left-part-of-store-display.png',
+'https://i.ibb.co/28jGwNN/sunglasses-display.png',
+'https://i.ibb.co/QMrnTMG/three-glasses-in-front-of-bear-figure-that-has-yellow-heart-shaped-sungl']
 var counter = 0;
 function bgSlideshow() {
   document.getElementById('slideshow').style.backgroundImage = 'url(' + bgImages[counter] + ')';
