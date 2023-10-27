@@ -10,7 +10,7 @@
             media="screen"
             href="styles.css"
         />
-        <script defer src="main.js"></script>
+        <script src="./main.js" defer></script>
     </head>
     <body>
         <div class="top">
@@ -25,10 +25,12 @@
                 </ul>
             </nav>
         </div>
-        <div class="section one"> <!--image slideshow of store--> </div>
+        <div class="section one" id="slideshow" onload="bgSlideshow()"> <!--image slideshow of store--> 
+            
+        </div>
         <div class="'selection two">
             <!--catchphrase plus brands-->
-            <h2></h2>
+            <h2>Your Vision, Your Story: Let Your Frames Tell It.</h2>
             <div class="brands">
                 <div>
                     <img
@@ -75,10 +77,6 @@
                         grace.</p
                     >
                 </div>
-                <div>
-                    <img class="brand-img" />
-                    <p class="brand-text"></p>
-                </div>
             </div>
         </div>
         <div class="selection three" onload="randomQuotes()">
@@ -93,7 +91,10 @@
             >
         </div>
     </body>
+   
     <footer>
         <p>© 2023 Dr. Glass Eyewear. All rights reserved.</p>
     </footer>
 </html>
+
+<img src="media/three sunglasses with plants behind.png"
