@@ -1,9 +1,19 @@
+  @font-face {
+    font-family: 'camptonblack';
+    src: url('camptonblack-webfont.woff2') format('woff2'),
+         url('camptonblack-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Questrial&family=Space+Grotesk&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Questrial', sans-serif;
   }
-  
+
   .top img {
     height: 70px;
     width: 20%;
@@ -18,6 +28,7 @@
     top: 0;
     width: 100%;
     transition: top 0.3s;
+    font-family: 'camptonblack';
   }
   
   .top nav ul {
@@ -49,6 +60,7 @@
 
   .hamburger .bar {
     display: none;
+    cursor: pointer;
   }
   
   .one {
@@ -68,6 +80,7 @@
     height: 500px;
     background: center / contain no-repeat;
     transition: background 1.5s linear;
+    z-index: 1;
   }
   
   .brands {
@@ -107,7 +120,7 @@
   #quote {
     color: black;
     font-weight: bold;
-    font-size: 5vh;
+    font-size: 4vh;
   }
   
   .four {
@@ -168,7 +181,7 @@
         height: 3px;
         margin: 5px auto;
         -webkit-transition: all 0.3s ease-in-out;
-        all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
         background-color: white;
     }
 
@@ -185,23 +198,31 @@
     }
 
     .nav-menu {
-        position: fixed;
-        left: -100%;
-        top: 70px;
-        gap: 0;
-        flex-direction: column;
-        background-color: black;
-        width: 100%;
-        text-align: center;
-        transition: 0.3s;
+      position: fixed;
+      left: -100%;
+      top: 70px;
+      gap: 0;
+      background-color: black;
     }
-
-    .nav-menu ul li {
-        margin: 16px 0;
+  
+    .nav-item {
+      margin: 35px auto;
+      width: 100%;
+      text-align: start;
     }
-
+  
+    .nav-item a {
+      text-align: center;
+      width: 100%;
+    }
+  
     .nav-menu.active {
-        left: 0;
+      left: 0;
+      height: auto;
+      width: 100%;
+      flex-flow: column wrap;
+      padding-bottom: 25px;
+      transition: all 0.5s ease-out;
     }
     
     .brands {

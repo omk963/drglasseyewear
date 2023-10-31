@@ -12,12 +12,15 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
 }));
 
 
-var bgImages = ['https://i.ibb.co/9TC1pc2/carin-layout.png',
-'https://i.ibb.co/3mH3GV9/display-of-sunglasses-on-a-table.png',
-'https://i.ibb.co/vCNvYxz/dr-glass-posters.png',
-'https://i.ibb.co/Yc0WWff/left-part-of-store-display.png',
-'https://i.ibb.co/28jGwNN/sunglasses-display.png',
-'https://i.ibb.co/QMrnTMG/three-glasses-in-front-of-bear-figure-that-has-yellow-heart-shaped-sungl']
+var bgImages = ['Media/carinLayout.png',
+'Media/sunglassesOnTable.png',
+'Media/DrGlassPoster.png',
+'Media/storeLeft.png',
+'Media/sunglassesDisplay.png',
+'Media/ThreeWithPlant.png',
+'Media/twoSunglassesDown.png',
+'Media/threeWithBear.png',
+'Media/twoSunglasses.png'];
 var counter = 0;
 function bgSlideshow() {
   document.getElementById('slideshow').style.backgroundImage = 'url(' + bgImages[counter] + ')';
