@@ -14,6 +14,10 @@
     font-family: 'Questrial', sans-serif;
   }
 
+  html {
+    overflow:scroll;
+  }
+
   .top img {
     height: 70px;
     width: 20%;
@@ -58,7 +62,7 @@
     font-size: 23px;
   }
 
-  .hamburger .bar {
+  .hamburger {
     display: none;
     cursor: pointer;
   }
@@ -172,8 +176,15 @@
   }
 }
 
-/* For Mobile View */
+
 @media screen and (max-width: 768px) {
+  .top img {
+    height: 70px;
+    width: 35%;
+    object-fit: cover;
+    position: absolute;
+  }
+  
   .hamburger {
     display: block;
     position: absolute;
@@ -244,15 +255,19 @@
   }
 
   #quote {
-    font-size: 4vh;
+    font-size: 32px;
   }
 
   .four {
     display: block;
   }
 
-  .four img {
-    padding-right: 3vw;
+  .brand-img {
+    width: 70%;
+    height: 300px;
+    object-position: cover;
+    padding: 10px;
+    margin-bottom: 10px;
   }
 
   .four p {
@@ -265,11 +280,56 @@
 }
 
 @media screen and (max-width: 600px) {
+  .top img {
+    height: 70px;
+    width: 40%;
+    object-fit: cover;
+    position: absolute;
+  }
+
+  .brand-img {
+    width: 80%;
+    height: 300px;
+    object-position: cover;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+.two {
+  width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.four {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  height: 100px;
+}
+
+  .four img {
+    grid-column-start: 1;
+    width: 150px;
+    height: 150px;
+    padding-bottom: 70px;
+  }
+
   .four p {
     font-size: 13px;
-    text-align: right;
-    padding-right: 25px;
-    position: relative;
-    bottom: 35px;
+    text-align: center;
+    align-self: center;
+    grid-column: 2 / span 3;
+  }
+
+  #quote {
+    font-size: 24px;
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
